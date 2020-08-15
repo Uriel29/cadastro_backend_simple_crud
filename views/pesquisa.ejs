@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  
+  </head>
+  <body>
+    
+
+
+  <fieldset id="buscar">
+    <legend>Buscar Pessoa</legend>
+    <form action="/pesquisar" method="GET">
+      <div>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" />
+      </div>
+      
+    
+      <div>
+        <input type="submit" value="Buscar" />
+      </div>
+    </form>
+  </fieldset>
+  <fieldset>
+    <legend>Pessoas cadastradas</legend>
+    <table border="1" id="registros">
+      <tr>
+        <td>Nome</td>
+        <td>Sobrenome</td>
+        <td>CPF</td>
+        <td>Telefone</td>
+        <td>Endereço</td>
+      </tr>
+      <% for( i in pessoas) { %>
+      <tr>
+        
+        <td><%= pessoas[i].nome %></td>
+        <td><%= pessoas[i].sobrenome %></td>
+        <td><%= pessoas[i].cpf %></td>
+        <td><%= pessoas[i].telefone %></td>
+        <td><%= pessoas[i].endereco %></td>
+        
+        </tr>
+
+        <% }%>
+      
+    </table>
+  </fieldset>
+
+  </body>
+</html>

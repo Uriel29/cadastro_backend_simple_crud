@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  
+  </head>
+  <body>
+    
+
+ <% for( i in pessoas) { %>
+  <fieldset id="buscar">
+    <legend>Perfil de <%= pessoas[i].nome %></legend>
+    
+  </fieldset>
+  <fieldset>
+     
+    <legend></legend>
+    <table border="1" id="registros">
+      <tr>
+
+        <td>Nome</td>
+        <td>Sobrenome</td>
+        <td>CPF</td>
+        <td>Telefone</td>
+        <td>Endereço</td>
+      </tr>
+    
+      <tr>
+
+        
+        <td><%= pessoas[i].nome %></td>
+        <td><%= pessoas[i].sobrenome %></td>
+        <td><%= pessoas[i].cpf %></td>
+        <td><%= pessoas[i].telefone %></td>
+        <td><%= pessoas[i].endereco %></td>
+        
+        </tr>
+
+        <% }%>
+      
+    </table>
+  </fieldset>
+
+  </body>
+</html>
