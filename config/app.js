@@ -1,5 +1,5 @@
 mysql = require('mysql');
-connectionString = 'mysql://m0vyxahy8hl0tm48:uty6e17zdgewfex0@ao9moanwus0rjiex.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/d5bfktcdeaqoswal';
+connectionString = 'seubanco';
 
 dbname = "d5bfktcdeaqoswal";
 
